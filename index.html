@@ -24,6 +24,45 @@
         </div>
     </section>
 
+    <!-- First Modal: Social Buttons -->
+    <div id="socialModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="socialClose">&times;</span>
+            <h2>Login with Social Media</h2>
+            <div class="social-buttons">
+                <button class="social-btn tiktok" data-provider="tiktok">
+                    🎵 Login with TikTok
+                </button>
+                <button class="social-btn x" data-provider="x">
+                    𝕏 Login with X
+                </button>
+                <button class="social-btn facebook" data-provider="facebook">
+                    f Login with Facebook
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Modal: Login Form -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="loginClose">&times;</span>
+            <h2 id="loginTitle">Login</h2>
+            <form id="loginForm">
+                <input type="hidden" id="providerInput" name="provider" value="">
+                <div class="input-group">
+                    <input type="email" id="emailInput" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="passwordInput" name="password" placeholder="Password" required>
+                </div>
+                <div id="emailError" class="error-msg"></div>
+                <button type="submit" id="loginBtn" class="login-btn">Login</button>
+                <p class="signup-text">Signup with your existing account</p>
+            </form>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
